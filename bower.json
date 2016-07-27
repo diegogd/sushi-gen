@@ -16,7 +16,7 @@
   ],
   "dependencies": {
     "jquery": "1.9.1 - 2",
-    "highlight": "^9.5.0",
+    "highlightjs": "^9.5.0",
     "league-gothic": "^1.0.0",
     "bootstrap": "3.3.6",
     "lato": "^0.3.0"

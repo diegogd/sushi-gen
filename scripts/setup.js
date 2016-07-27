@@ -34,7 +34,7 @@ fs.mkdir('./public/lib/', function (){
 
     //Highlight.js
     fs.mkdir('./public/lib/highlight', function (){
-        copyFile('./public/_components/highlight/src', './public/lib/highlight/');
+        copyFile('./public/_components/highlightjs', './public/lib/highlight/');
     });
 });
 

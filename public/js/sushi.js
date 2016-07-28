@@ -121,7 +121,7 @@ $(document).ready(function(){
 
 $(window).load(function(){
     console.log("Starting highlights");
-    $('code').each(function(i, block) {
+    $('pre code').each(function(i, block) {
       hljs.highlightBlock(block);
     });
 });

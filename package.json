@@ -4,7 +4,9 @@
   "description": "A tool for automatically generating Sushi Cards from Markdown inputs.",
   "main": "index.js",
   "scripts": {
+    "postinstall": "bower install && grunt setup",
     "fetch-content": "git clone https://github.com/PhilipHarney/sushi-content.git ./public/sushi",
+    "compile-cards": "coffee scripts/compile.coffee",
     "setup-libraries": "node scripts/setup.js"
   },
   "repository": {
@@ -18,7 +20,20 @@
   },
   "homepage": "https://github.com/PhilipHarney/sushi-gen#readme",
   "dependencies": {
+    "async": "^2.0.1",
+    "colors": "^1.1.2",
+    "express": "^4.14.0",
+    "glob": "^7.0.5",
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-open": "^0.2.3",
     "harp": "^0.20.3",
-    "ncp": "^2.0.0"
+    "load-grunt-configs": "^1.0.0",
+    "ncp": "^2.0.0",
+    "node-progress": "^0.1.0",
+    "nodepdf": "^1.3.0",
+    "path": "^0.12.7",
+    "phantomjs": "^2.1.7"
   }
 }

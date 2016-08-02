@@ -32,6 +32,9 @@ module.exports =  ->
         async: false # required to let watch to work
         root: 'public'
     sushirender:
+      php1:
+        files:
+          'output/sushi-php/': ['./public/sushi/**/php/**/01.md']
       php:
         files:
           'output/sushi-php/': ['./public/sushi/**/php/**/*.md']

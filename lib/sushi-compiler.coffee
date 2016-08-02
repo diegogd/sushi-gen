@@ -12,7 +12,7 @@ app = express()
 port = 9080
 webPrefix = "http://localhost:#{port}/"
 outputFolder = "output-sushi/"
-factor = 0.34
+factor = 0.33
 pWidth = 2480 * factor
 pHeight = 3508 * factor
 webpages = []
@@ -31,6 +31,11 @@ nodePDFproperties =
       width: pWidth
       height: pHeight
       orientation: 'portrait'
+      margin:
+        top: '0px'
+        left: '0px'
+        right: '0px'
+        bottom: '0px'
   zoomFactor: 1
 
 module.exports = (options, fishcallback) ->

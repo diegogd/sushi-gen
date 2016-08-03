@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/PhilipHarney/sushi-gen#readme",
   "dependencies": {
-    "harp": "^0.20.3",
     "ncp": "^2.0.0"
   }
 }

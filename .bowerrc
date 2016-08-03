@@ -1,6 +1,6 @@
 {
   "directory" : "public/_components",
   "scripts": {
-      "postinstall": "node scripts/setup.js"
+      "postinstall": "npm install && node scripts/setup.js"
   }
 }
